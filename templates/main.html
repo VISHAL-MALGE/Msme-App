@@ -208,8 +208,8 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             padding: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0rem;
         }
 
         .section-header {
@@ -585,6 +585,223 @@
             background-color: var(--light-gray);
         }
 
+
+        /* General Styles */
+        .page-content {
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Customers Section */
+        .customers-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 15px;
+        }
+
+        .customers-section-header h2 {
+            font-size: 1.5rem;
+            color: #343a40;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+        }
+
+        .customers-section-header h2 i {
+            color: var(--primary);
+        }
+
+        .customers-add-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .customers-add-btn:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .customer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .customer-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: flex;
+            padding: 15px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .customer-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .customer-avatar {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .customer-details {
+            flex: 1;
+        }
+
+        .customer-details h3 {
+            margin: 0 0 8px 0;
+            color: #212529;
+            font-size: 1.1rem;
+        }
+
+        .customer-details p {
+            margin: 0;
+            color: #6c757d;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .customer-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .customer-action-btn {
+            background-color: transparent;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .customer-action-btn:hover {
+            background-color: #f8f9fa;
+        }
+
+        .customer-action-btn:first-child {
+            color: var(--primary);
+        }
+
+        .customer-action-btn:last-child {
+            color: #c13d4a;
+        }
+
+        /* Settings Section */
+        .settings-section-header {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 15px;
+        }
+
+        .settings-section-header h2 {
+            font-size: 1.5rem;
+            color: #343a40;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+        }
+
+        .settings-section-header h2 i {
+            color: var(--primary);
+        }
+
+        .settings-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .settings-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .settings-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .settings-icon {
+            background-color: #f1f3ff;
+            color: var(--primary);
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        .settings-details {
+            flex: 1;
+        }
+
+        .settings-details h3 {
+            margin: 0 0 5px 0;
+            color: #212529;
+            font-size: 1.1rem;
+        }
+
+        .settings-details p {
+            margin: 0;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .settings-manage-btn {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 8px 15px;
+            color: var(--primary);
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .settings-manage-btn:hover {
+            background-color: #e9ecef;
+        }
+
         /* Responsive Design */
         @media (max-width: 1200px) {
             .stats-grid {
@@ -704,7 +921,7 @@
     </style>
 </head>
 <body>
-    <!-- Sidebar -->
+<!-- Sidebar and Main Content Structure -->
 <!-- Sidebar -->
 <div class="sidebar">
     <div class="logo">
@@ -930,8 +1147,6 @@
 
     <!-- Transactions Content -->
     <div class="page-content" id="transactions">
-        <!-- <h2>Transactions History</h2> -->
-        <p>Here are some recent transactions:</p>
         <table class="transaction-table">
             <thead>
                 <tr>
@@ -951,20 +1166,83 @@
                     <td class="transaction-amount amount-negative">-₹12,000</td>
                 </tr>
                 <tr>
-                    <td>Payment from Client B</td>
+                    <td>Payment to Vendor B</td>
                     <td>18 Apr 2025</td>
                     <td>Income</td>
                     <td><span class="transaction-status status-completed">Completed</span></td>
-                    <td class="transaction-amount amount-positive">+₹20,000</td>
+                    <td class="transaction-amount amount-negative">+₹20,000</td>
+                </tr>
+                <tr>
+                    <td>Payment from Client B</td>
+                    <td>15 Apr 2025</td>
+                    <td>Income</td>
+                    <td><span class="transaction-status status-completed">Completed</span></td>
+                    <td class="transaction-amount amount-positive">+₹10,000</td>
+                </tr>
+                <tr>
+                    <td>Payment from Client B</td>
+                    <td>12 Apr 2025</td>
+                    <td>Income</td>
+                    <td><span class="transaction-status status-completed">Completed</span></td>
+                    <td class="transaction-amount amount-positive">+₹25,000</td>
+                </tr>
+                <tr>
+                    <td>Payment from Client B</td>
+                    <td>12 Apr 2025</td>
+                    <td>Income</td>
+                    <td><span class="transaction-status status-completed">Completed</span></td>
+                    <td class="transaction-amount amount-positive">+₹30,000</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <!-- New Transaction Modal -->
+    <div class="modal" id="transaction-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Add New Transaction</h2>
+            <form id="transaction-form">
+                <div class="form-group">
+                    <label class="form-label">Transaction Type</label>
+                    <select class="form-input" id="transaction-type">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                        <option value="transfer">Transfer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Description</label>
+                    <input type="text" class="form-input" placeholder="Enter transaction description">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Amount (₹)</label>
+                    <input type="number" class="form-input" placeholder="Enter amount">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Category</label>
+                    <select class="form-input" id="transaction-category">
+                        <option value="sales">Sales</option>
+                        <option value="services">Services</option>
+                        <option value="salary">Salary</option>
+                        <option value="supplies">Supplies</option>
+                        <option value="rent">Rent</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="equipment">Equipment</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Date</label>
+                    <input type="date" class="form-input">
+                </div>
+                <button type="button" class="action-btn" id="add-transaction-btn">Add Transaction</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Invoices Content -->
     <div class="page-content" id="invoices">
-        <!-- <h2>Invoices</h2> -->
-        <p>Here are some recent invoices:</p>
         <table class="transaction-table">
             <thead>
                 <tr>
@@ -1029,26 +1307,97 @@
         </table>
     </div>
 
-    <!-- Customers Content -->
-    <div class="page-content" id="customers">
-        <!-- <h2>Customers</h2> -->
-        <p>Here is a list of your customers:</p>
-        <ul>
-            <li><strong>Client A</strong> - a@example.com</li>
-            <li><strong>Client B</strong> - b@example.com</li>
-            <li><strong>Client C</strong> - c@example.com</li>
-        </ul>
+<!-- Customers Content -->
+<div class="page-content" id="customers">
+    <div class="customers-section-header">
+        <h2><i class="fas fa-users"></i> Customers</h2>
+        <button class="customers-add-btn"><i class="fas fa-plus"></i> Add Customer</button>
     </div>
+    <div class="customer-grid">
+        <div class="customer-card">
+            <div class="customer-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="customer-details">
+                <h3>Client A</h3>
+                <p><i class="fas fa-envelope"></i> a@example.com</p>
+                <div class="customer-actions">
+                    <button class="customer-action-btn"><i class="fas fa-edit"></i></button>
+                    <button class="customer-action-btn"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="customer-card">
+            <div class="customer-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="customer-details">
+                <h3>Client B</h3>
+                <p><i class="fas fa-envelope"></i> b@example.com</p>
+                <div class="customer-actions">
+                    <button class="customer-action-btn"><i class="fas fa-edit"></i></button>
+                    <button class="customer-action-btn"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="customer-card">
+            <div class="customer-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="customer-details">
+                <h3>Client C</h3>
+                <p><i class="fas fa-envelope"></i> c@example.com</p>
+                <div class="customer-actions">
+                    <button class="customer-action-btn"><i class="fas fa-edit"></i></button>
+                    <button class="customer-action-btn"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Settings Content -->
-    <div class="page-content" id="settings">
-        <h2>Settings</h2>
-        <p>Here are some settings you can configure:</p>
-        <ul>
-            <li><strong>Profile Settings:</strong> Update your profile and password.</li>
-            <li><strong>Notification Preferences:</strong> Manage email and SMS notifications.</li>
-            <li><strong>Account Settings:</strong> Connect or disconnect bank accounts.</li>
-        </ul>
+<!-- Settings Content -->
+<div class="page-content" id="settings">
+    <div class="settings-section-header">
+        <h2><i class="fas fa-cog"></i> Settings</h2>
+    </div>
+    <div class="settings-cards">
+        <div class="settings-card">
+            <div class="settings-icon">
+                <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="settings-details">
+                <h3>Profile Settings</h3>
+                <p>Update your profile and password</p>
+            </div>
+            <div class="settings-action">
+                <button class="settings-manage-btn">Manage <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="settings-card">
+            <div class="settings-icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="settings-details">
+                <h3>Notification Preferences</h3>
+                <p>Manage email and SMS notifications</p>
+            </div>
+            <div class="settings-action">
+                <button class="settings-manage-btn">Manage <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="settings-card">
+            <div class="settings-icon">
+                <i class="fas fa-university"></i>
+            </div>
+            <div class="settings-details">
+                <h3>Account Settings</h3>
+                <p>Connect or disconnect bank accounts</p>
+            </div>
+            <div class="settings-action">
+                <button class="settings-manage-btn">Manage <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
     </div>
 </div>
     
